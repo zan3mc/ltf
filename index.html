@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <table class="registration">
+        <tr>
+          <td colspan="2" class="form_title">
+            <strong>Registration Form</strong>
+          </td>
+        </tr>
+        <tr>
+          <td class="user_input">Enter Name</td>
+          <td>
+            <input type="text" name="username" id="name_id" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="user_input">Enter Password</td>
+          <td class="password_input">
+            <input type="password" name="pw" id="password_id" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="user_input">Enter Address</td>
+          <td>
+            <textarea class="email" name="email" id="email_id" maxlength="100" minlength="15" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="selector">Select Game</td>
+
+          <td>
+            <input class="sports" type="checkbox" name="football" id="fav_sport1" required/>
+            <label for="fav_sport1">Football</label><br />
+            <input class="sports" type="checkbox" name="hockey" id="fav_sport2" required/>
+            <label for="fav_sport2">Hockey</label><br />
+            <input class="sports" type="checkbox" name="badminton" id="fav_sport3" required/>
+            <label for="fav_sport3">Badminton</label><br />
+            <input class="sports" type="checkbox" name="cricket" id="fav_sport4" required/>
+            <label for="fav_sport4">Cricket</label><br />
+            <input class="sports" type="checkbox" name="volleyball" id="fav_sport5" required/>
+            <label for="fav_sport5">Volleyball</label><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="selector">Gender</td>
+          <td>
+            <input class="genderselect" type="radio" name="gender" id="gender_male" value="GENDER_SELECTOR" required/>
+            <label for="gender_male">Male</label>
+            <input type="radio" name="gender" id="gender_female" value="GENDER_SELECTOR" required/>
+            <label for="gender_female">Female</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="user_input">Select ur age</td>
+          <td>
+            <label for="age_selector"></label>
+            <input class="age" type="number" name="age" id="age_selector" min="5" max="100" placeholder="Select" required/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="selector">Select Photo</td>
+          <td>
+            <label for="myphoto"></label>
+            <input class="photo" type="file" name="Photos" id="myphoto" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="mbuttons">
+            <button class="buttons" type="button" onclick="alert('Hi! Click me again!')">Click Me</button>
+            <button class="buttons" type="reset">Reset</button>
+            <button class="buttons" type="submit">Submit Form</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
